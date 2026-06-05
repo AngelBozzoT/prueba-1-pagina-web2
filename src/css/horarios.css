@@ -1,0 +1,78 @@
+/* ==========================================================================
+   3. SERVICIOS (Uso de CSS Grid)
+   ========================================================================== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    background-color: var(--bg-white);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   4. TABLA CONTENIDO TABULAR
+   ========================================================================== */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: var(--bg-white);
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--bg-white);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+.schedule-info {
+    background-color: var(--bg-light);
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+/* RESPONSIVE: SERVICIOS */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

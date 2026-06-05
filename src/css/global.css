@@ -1,0 +1,126 @@
+/* ==========================================================================
+   VARIABLES GLOBALES Y ACCESIBILIDAD (Cumple contraste WCAG AA y fuente >= 16px)
+   ========================================================================== */
+:root {
+    --primary-color: #0b5ed7;       /* Azul de alto contraste */
+    --secondary-color: #1c1f23;     /* Gris oscuro para textos principales */
+    --bg-light: #f8f9fa;            /* Fondo claro para secciones intercaladas */
+    --bg-white: #ffffff;
+    --text-main: #212529;           /* Color de texto con contraste 4.5:1 */
+    --text-muted: #495057;
+    --error-color: #b02a37;         /* Rojo accesible para errores */
+    --success-color: #146c43;       /* Verde accesible para éxitos */
+    --font-base: 'Arial', sans-serif;
+    --line-height: 1.6;
+}
+
+/* ==========================================================================
+   ESTILOS BASE
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Cumple requisito técnico mínimo */
+}
+
+body {
+    font-family: var(--font-base);
+    color: var(--text-main);
+    line-height: var(--line-height);
+    background-color: var(--bg-white);
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+footer {
+    background-color: var(--secondary-color);
+    color: #ced4da;
+    padding: 40px 0 20px 0;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-info, .footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer h4 {
+    color: var(--bg-white);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: var(--bg-white);
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #343a40;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.85rem;
+}

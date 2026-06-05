@@ -1,0 +1,93 @@
+/* ==========================================================================
+   6. CONTACTO Y FORMULARIO
+   ========================================================================== */
+.form-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: var(--font-base);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.25);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0a58ca;
+}
+
+/* Estilos para Mensajes de Error y Éxito */
+.error-text {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.feedback-message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feedback-message.error {
+    background-color: #f8d7da;
+    color: var(--error-color);
+    border: 1px solid #f5c2c7;
+}
+
+.feedback-message.success {
+    background-color: #d1e7dd;
+    color: var(--success-color);
+    border: 1px solid #badbcc;
+}
+
+.hidden {
+    display: none;
+}
+
+/* RESPONSIVE: FORMULARIO */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+}
