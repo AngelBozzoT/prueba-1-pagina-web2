@@ -9,7 +9,6 @@ Desarrollado como parte de la **Evaluación 1** para la asignatura de **Desarrol
 ## Integrantes del Proyecto
 * **Ángel Bozzo** 
 * **Jorge Gonzalez**  
-* 
 ---
 
 ## Características y Criterios Cumplidos
