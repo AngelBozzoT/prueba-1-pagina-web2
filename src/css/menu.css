@@ -29,9 +29,9 @@ nav ul {
     list-style: none;
     gap: 20px;
 }
-
+/* cambio de color letras del menu */
 nav ul li a {
-    color: #e9ecef;
+    color: #feffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.95rem;

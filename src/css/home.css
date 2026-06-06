@@ -28,6 +28,8 @@
     margin-right: auto;
 }
 
+/* cambio de estilo del boton agendar cita */
+
 .btn-cta {
     display: inline-block;
     background-color: var(--primary-color);
@@ -38,9 +40,9 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
-
+/* cambio de estilo del boton de llamada a la accion */
 .btn-cta:hover {
-    background-color: #0a58ca;
+    background-color: #0a4398;
 }
 
 /* ==========================================================================

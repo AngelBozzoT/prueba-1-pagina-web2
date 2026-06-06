@@ -48,9 +48,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+/* cambio de estilo del boton de envio del formulario */
 .btn-submit:hover {
-    background-color: #0a58ca;
+    background-color: #0a7606;
 }
 
 /* Estilos para Mensajes de Error y Éxito */
